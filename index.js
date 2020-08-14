@@ -45,3 +45,41 @@ const calcularAreaTriangulo = (base , altura) => {
 console.log (calcularAreaTriangulo(3, 4))
 console.log (calcularAreaTriangulo(5, 6))
 
+//ejercicio 6
+
+let mensajeAGritar = prompt("Ingrese un saludo")
+
+const gritar = (saludo) => {
+    return `¡${saludo}!`
+}
+    
+console.log(gritar(mensajeAGritar)) 
+
+//ejercicio 7
+
+let nombre = prompt ("Por favor escriba su nombre")
+let apellido = prompt ("Ahora escriba su apellido")
+
+const obtenerNombreCompleto = (nombre, apellido)=>{
+    return `${nombre} ${apellido}`
+}
+
+console.log (obtenerNombreCompleto (nombre,apellido))
+
+//ejercicio 8
+
+let nombre8 = prompt ("¿Cuál es tu nombre?")
+
+const saludarConNombre = (nombre8)=>{
+    return `Hola ${nombre8}, un gusto conocerte`
+}
+
+console.log (saludarConNombre(nombre8))
+
+//ejercicio 9
+
+const saludarGritando=(nombre, apellido)=>{
+    return `¡${mensajeAGritar} ${nombre} ${apellido}, un gusto conocerte!`
+}
+
+console.log (saludarGritando(nombre, apellido))
