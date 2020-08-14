@@ -79,7 +79,41 @@ console.log (saludarConNombre(nombre8))
 //ejercicio 9
 
 const saludarGritando=(nombre, apellido)=>{
-    return `¡${mensajeAGritar} ${nombre} ${apellido}, un gusto conocerte!`
+   let nombreCompleto=obtenerNombreCompleto(nombre, apellido)
+   let saludo = saludarConNombre(nombreCompleto)
+   let grito= gritar (saludo)
+   return grito
 }
 
 console.log (saludarGritando(nombre, apellido))
+
+
+//ejercicio 17
+const obtenerCompetencia =(a,b)=>{
+    return `${a}  vs. ${b}`
+}
+
+console.log (obtenerCompetencia ("JavaScript", "Python"))
+console.log (obtenerCompetencia ("Coca", "Pepsi"))
+console.log (obtenerCompetencia ("Perros", "Gatos"))
+
+//ejercicio 18
+
+const generarEmail=(usuario,dominio)=>{
+    return `${usuario}@${dominio}`
+}
+
+console.log(generarEmail("macarenarealeportelli", "gmail.com"))
+
+//ejercicio 19
+
+const calcularPuntaje =(a, b, c)=>{
+  let facil= (a*3)
+  let normal= (b*5)
+  let dificil= (c*10)
+  return facil+normal+dificil
+}
+
+console.log(calcularPuntaje (3,0,0))
+console.log(calcularPuntaje (0,2,1))
+console.log(calcularPuntaje (5,1,2))
